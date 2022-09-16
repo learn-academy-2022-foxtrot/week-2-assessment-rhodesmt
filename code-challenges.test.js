@@ -12,13 +12,6 @@
 
 // --------------------INSTRUCTOR EXAMPLE: Create a function that takes in an array of numbers and returns an array with all the numbers multiplied by 3.
 
-// Jest template
-// describe (" ", () => {
-//   it (" ", () => {
-//     expect().toEqual()
-//   })
-// })
-
 // a) Create a test with expect statements for each of the variables provided.
 
 const numbersArray1 = [6, 7, 8, 9, 10]
@@ -29,8 +22,14 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // b) Create the function that makes the test pass.
 
-
 // -------------------------<break>---------------------------------
+
+// Jest template
+// describe (" ", () => {
+//   it (" ", () => {
+//     expect().toEqual()
+//   })
+// })
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
