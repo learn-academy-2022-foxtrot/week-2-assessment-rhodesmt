@@ -12,14 +12,25 @@
 
 // --------------------INSTRUCTOR EXAMPLE: Create a function that takes in an array of numbers and returns an array with all the numbers multiplied by 3.
 
+// Jest template
+// describe (" ", () => {
+//   it (" ", () => {
+//     expect().toEqual()
+//   })
+// })
+
 // a) Create a test with expect statements for each of the variables provided.
 
 const numbersArray1 = [6, 7, 8, 9, 10]
 // Expected output: [18, 21, 24, 27, 30]
+
 const numbersArray2 = [24, 27, 30, 33, 36]
 // Expected output: [72, 81, 90, 99, 108]
 
 // b) Create the function that makes the test pass.
+
+
+// -------------------------<break>---------------------------------
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
@@ -32,7 +43,13 @@ const object2 = { number: 0 }
 const object3 = { number: -7 }
 // Expected output: "-7 is not divisible by three"
 
+
+// -------------------------<break>---------------------------------
+
 // b) Create the function that makes the test pass.
+
+
+// -------------------------<break>---------------------------------
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
@@ -43,7 +60,13 @@ const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
+
+// -------------------------<break>---------------------------------
+
 // b) Create the function that makes the test pass.
+
+
+// -------------------------<break>---------------------------------
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
@@ -55,5 +78,8 @@ const vowelTester2 = "academy"
 // Expected output: 0
 const vowelTester3 = "challenges"
 // Expected output: 2
+
+
+// -------------------------<break>---------------------------------
 
 // b) Create the function that makes the test pass.
