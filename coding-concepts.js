@@ -60,7 +60,7 @@ const multipliedByTwo = [4, 5, 6, 7, 8].map((number) => number * 2)
 // --------------------4) What will this log?
 
 const onlyOdds = [11, 12, 13, 14, 15].filter((number) => number % 2 !== 0)
-console.log(onlyOdds)
+// console.log(onlyOdds)
 
 // a) Your answer: .filter() is another Higher-Order Function that has a built-in iteration to return a new array with only values cooresponding to whatever parameters have been declared as the 'filter' for the given array. In this instance, we want to take array onlyOdds with a length of 0-4 and pass it through the .filter method
 
@@ -87,14 +87,21 @@ const myCodingSkills = {
   versionControl: "GitHub"
 }
 // console.log(myCodingSkills.languages[0])
+// return =>JavaScript
 
-// a) Your answer:
+// console.log(myCodingSkills.languages[1])
+// return =>Ruby
 
-// Expected return =>
+// console.log(myCodingSkills.databases)
+// return =>PostgreSQL
 
-// b) Verify and explain:
+// a) Your answer:The output should be JavaScript. It is the value of the 0th index within the languages section of myCodingSkills. The console.log is calling the myCodingClass and specifically the 0th (or first) index of languages. 
 
-// Researched return =>
+// Expected return =>JavaScript
+
+// b) Verify and explain:I was correct! The console outputted JavaScript. I played around with the console.log statement to receive different outputs.
+
+// Researched return =>JavaScript
 
 // -------------------------<break>---------------------------------
 
@@ -107,13 +114,13 @@ class Learn {
     this.year = 2022
   }
 }
-const learnStudent = new Learn("George")
-// console.log(learnStudent)
+const learnStudent = new Learn("Matthew")
+console.log(learnStudent)
 
-// a) Your answer:
+// a) Your answer:This console log should output George. I think the way the command on line 117 is written will add a new section to the learn class called learnStudent and assign the value of that as George.
 
-// Expected return =>
+// Expected return => George
 
-// b) Verify and explain:
+// b) Verify and explain:I forgot to take into account that George was being assigned as the (name) for the the constructor. The rest of the information was still assigned to the other sections. By declaring learnStudent = new Learn("George") and calling learnStudent in the console.log statement, The entire Learn class was being called with George being passed in as the placeholder for this.student.
 
-// Researched return =>
+// Researched return =>Learn { student: 'George', cohort: 'Foxtrot', year: 2022 }
