@@ -85,15 +85,27 @@ const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
+// I will need to write the test function that takes in an array of words and returns an array with all the words capitalized.
 describe ("capAllLetters", () => {
     it ("takes in an array of words and returns an array with all the words capitalized.", () => {
-      expect(capAllLetters()).toEqual("is divisible by three")
-      expect(capAllLetters()).toEqual("is divisible by three")
+      expect(capAllLetters(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+      expect(capAllLetters(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
     })
 })
+//  ReferenceError: capAllLetters is not defined
+// The test failed successfully. I have a feeling that there's something wrong or out of place, I could be wrong but we will find out soon.
 
 // b) Create the function that makes the test pass.
+// Declare capAllLetters variable. Since the object being passed through the function is an array, I will need to take the array to a string using .join() so that I can then use the .toUpperCase() method to capitalize the strings. 
+    
+//This approach doesn't seem to be working. 
 
+// I think I'm going to need to run a for loop to iterate over the array to capitalize the words, and then return the new array. Since I will need to return another array, I think I'm going to need to use .map to be able to return an altered array.
+const capAllLetters = (array) => {
+    return array.map(() => {
+
+    })
+}
 
 // -------------------------<break>---------------------------------
 
