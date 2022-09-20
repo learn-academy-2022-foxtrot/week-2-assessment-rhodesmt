@@ -143,7 +143,7 @@ const indexOfFirstVowel = (string) => {
 }
 
 // So I'm not sure what's happening here... I'm technically getting the correct output, but the test is reading as a fail because the value being outputted is in brackets while the expected is a number without brackets. I tried removing the brackets from the return [i] statement on line 40 but that doesn't correct the error.
-    // I know it has to be a syntax error somewhere, but I'm not sure what the issue is
+    // I know it has to be a syntax error somewhere, but I'm not sure what the issue is.
 
 // Reference Error:  Expected: 1  Received: [1]
 
