@@ -113,6 +113,18 @@ const capAllLetters = (array) => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
+    // I will need to create a test function that will take in a string and log the index of the first vowel.
+    // I will also need to add an expect statement for each of the given variables
+
+    // Test Failed Successfully:ReferenceError: indexOfFirstVowel is not defined
+
+    describe("indexOfFirstVowel", () => {
+    it("takes in a string and logs the index of the first vowel", () => {
+    expect(indexOfFirstVowel(vowelTester1)).toBe(1)
+    expect(indexOfFirstVowel(vowelTester2)).toBe(0)
+    expect(indexOfFirstVowel(vowelTester3)).toBe(2)
+  })
+})
 const vowelTester1 = "learn"
 // Expected output: 1
 const vowelTester2 = "academy"
@@ -120,7 +132,18 @@ const vowelTester2 = "academy"
 const vowelTester3 = "challenges"
 // Expected output: 2
 
-
-// -------------------------<break>---------------------------------
-
 // b) Create the function that makes the test pass.
+
+const indexOfFirstVowel = (string) => {
+    for (let i=0; i<string.length; i++) {
+      if (string[i] === "a" || string[i] === "e" || string[i] === "i" ||     string[i] === "o" || string[i] === "u") {
+            return [i]   
+        }
+    } 
+}
+
+// So I'm not sure what's happening here... I'm technically getting the correct output, but the test is reading as a fail because the value being outputted is in brackets while the expected is a number without brackets. I tried removing the brackets from the return [i] statement on line 40 but that doesn't correct the error.
+    // I know it has to be a syntax error somewhere, but I'm not sure 
+
+// Reference Error:  Expected: 1  Received: [1]
+
