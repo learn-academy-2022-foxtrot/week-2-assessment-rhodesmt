@@ -58,18 +58,18 @@ Researched answer:Classes are the blueprints of objects, and contain both data a
 
 Your answer:I do not know what hoisting is in Javascript, but I will absolutely be able to give you an answer. 
 
-Researched answer:
+Researched answer:Hoisting refers to JavaScripts default behavior that moves all declarations to the top of the current scope or function. The hoisted variables are not initialized however, until they are declared, the output will result in a ReferenceError.
 
 ## Looking Ahead: Terms for Next Week
 
 Research and define the following terms to the best of your ability.
 
-1. User stories:
+1. User stories: A user story is like the pseudo-code for the design process when creating an app. It is a descriptive statement about a specific feature of an application, wrote from the perspective of a user.
 
-2. Spread operator:
+2. Spread operator: The spread operator(...) is a built-in method for Javascript that allows us to copy part or all of an existing array or object into another array or object. 
 
-3. React:
+3. React: React is a JavaScript library that allows us to create out user interface (UI) and built applications. React allows us to compartmentalize and separate each component along with their functionality and return markup.
 
-4. React props:
+4. React props: React properties are specialized objects that pass information from one component to another. Props create a 'waterfall' flow of data and behavior from the parent component down to a specific nested component depending on the component invocation.
 
-5. DOM events:
+5. DOM events: DOM stands for Document Object Model and is the visual representation of code, ie. a website in a mobile or web browser. Events are "things" that happen to webpages. They can be anything such as the page finishes loading, the user clicks on a button, or inputs information into a field.
