@@ -10,34 +10,73 @@
 const cohort = "Foxtrot 2022"
 // console.log(cohort.split(""))
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: The .split("") method is a built-in method that is used to take a string and create a new array. The string will be broken up into the individual characters and be assigned an index beginning at the zeroth position and continuing for each character within the string. The spacing between the new characters within the new array can be assigned inside of the quotation marks within the split method .split("<here>")
+// Expected Return => 
+// ['F', 'o', 'x', 't', 'r', 'o', 't', ' ', '2', '0', '2', '2']
+
+// b) Verify and explain:I was correct in the output. The .split method iterated through the string to identify each character, assign the character a cooresponding index for the new array, and then display the new array to the console.
+// Researched return =>
+// ['F', 'o', 'x', 't', 'r', 'o', 't', ' ', '2', '0', '2', '2']
+
+// -------------------------<break>---------------------------------
 
 // --------------------2) What will this log?
 
 const greeter = (name) => {
-  `Hello, ${name}!`
+  return `Hello, ${name}!`
 }
 // console.log(greeter("LEARN Student"))
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: I believe this will log an undefined message. The function has been declared, however there is no return statement within the function. As it reads right now, "LEARN Student" is being passed as the argument for the greeter function.
+
+// Since name is being used as a placeholder for any string entered for the greeting, "LEARN Student" is then called to the string `Hello, ${name}!` through string interpolation, however that string has no return statement to display the output.
+
+// Expected Return => undefined
+
+// b) Verify and explain:I was correct!! The function had no issue with running, however without the return statement, there is nothing telling the function to return that output back to the console. By adding a return statement before the string interpolation at line 26, this will return the greeter function output.
+
+// Researched Return => Hello, LEARN Student!
+
+// -------------------------<break>---------------------------------
 
 // --------------------3) What will this log?
 
 const multipliedByTwo = [4, 5, 6, 7, 8].map((number) => number * 2)
 // console.log(multipliedByTwo)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: .map is a Higher-Order Function that uses a built in function to iterate through a given array and return a new array of the same length. This same task could be accomplished using a for loop to iterate through the array and push the new multiplied index values to an empty array that we could then display. However using .map is much more efficient and concise.
+
+// multipliedByTwo is being used as the argument in the .map function. The iteration will then multiply i * 2 at each index for the array, with i being the current value of the index in the array 0-4.
+
+// Array Indexes       0  1   2   3   4
+// Expected Return => [8, 10, 12, 14, 16]
+
+// b) Verify and explain:I was correct again!! map returned a new array with a length of 0-4 and each index value from multipliedByTwo, well, multiplied by two!
+
+// Researched Return => [ 8, 10, 12, 14, 16 ]
+
+// -------------------------<break>---------------------------------
 
 // --------------------4) What will this log?
 
 const onlyOdds = [11, 12, 13, 14, 15].filter((number) => number % 2 !== 0)
 // console.log(onlyOdds)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: .filter() is another Higher-Order Function that has a built-in iteration to return a new array with only values cooresponding to whatever parameters have been declared as the 'filter' for the given array. In this instance, we want to take array onlyOdds with a length of 0-4 and pass it through the .filter method
+
+// For this filter function, the filter is using the modulo operator to determine whether a given value for (onlyOdds[i]/2) has a remainder that is not strictly equal to zero, making it an odd number. 
+// i.e. even: 4 / 2 = 2(0 remainder)    odd:  5 / 2 = 2(.5 remainder)
+
+// If the number is an odd number, that number is the sent to a new array containing only those values. The .filter() and .map() differ in that .map must return an array of equal length to the original array. 
+// .filter can return an array that now has a length of 0-2. 
+
+// Expected return => [11, 13, 15]
+
+// b) Verify and explain:I am on a ROLL :D The onlyOdds array was passed through the filter function as the argument. Using the modulo operator, .filter determined through iteration which values for each index were odd numbers, and then pushed those numbers to a new array that was then returned to the console.
+
+// Researched return => [ 11, 13, 15 ]
+
+// -------------------------<break>---------------------------------
 
 // --------------------5) What will this log?
 
@@ -48,9 +87,23 @@ const myCodingSkills = {
   versionControl: "GitHub"
 }
 // console.log(myCodingSkills.languages[0])
+// return =>JavaScript
 
-// a) Your answer:
-// b) Verify and explain:
+// console.log(myCodingSkills.languages[1])
+// return =>Ruby
+
+// console.log(myCodingSkills.databases)
+// return =>PostgreSQL
+
+// a) Your answer:The output should be JavaScript. It is the value of the 0th index within the languages section of myCodingSkills. The console.log is calling the myCodingClass and specifically the 0th (or first) index of languages. 
+
+// Expected return =>JavaScript
+
+// b) Verify and explain:I was correct! The console outputted JavaScript. I played around with the console.log statement to receive different outputs.
+
+// Researched return =>JavaScript
+
+// -------------------------<break>---------------------------------
 
 // --------------------STRETCH: What will this log?
 
@@ -61,8 +114,13 @@ class Learn {
     this.year = 2022
   }
 }
-const learnStudent = new Learn("George")
-// console.log(learnStudent)
+const learnStudent = new Learn("Matthew")
+console.log(learnStudent)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer:This console log should output George. I think the way the command on line 117 is written will add a new section to the learn class called learnStudent and assign the value of that as George.
+
+// Expected return => George
+
+// b) Verify and explain:I forgot to take into account that George was being assigned as the (name) for the the constructor. The rest of the information was still assigned to the other sections. By declaring learnStudent = new Learn("George") and calling learnStudent in the console.log statement, The entire Learn class was being called with George being passed in as the placeholder for this.student.
+
+// Researched return =>Learn { student: 'George', cohort: 'Foxtrot', year: 2022 }
